@@ -23,6 +23,23 @@ forest named `lab.local`.
 ```
 3. The server restarts automatically. Sign in as `LAB\Administrator`.
 
+## Verification
+`Get-ADDomain` was run in an elevated PowerShell session on DC01:
+
+```powershell
+Get-ADDomain
+```
+
+| Property | Value |
+|---|---|
+| Domain name | `lab.local` |
+| NetBIOS name | `LAB` |
+| Domain functional level | Windows2016Domain |
+| PDC Emulator / RID Master / Infrastructure Master | `DC01.lab.local` |
+| Replica directory servers | `DC01.lab.local` |
+
+DC01 is the only domain controller in the forest.
+
 ## Troubleshooting
 - **Promotion hung on the first attempt.** The VM became unresponsive
   during the process, caused by resource contention on the host (4 GB RAM
