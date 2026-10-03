@@ -1,27 +1,28 @@
 # it-infrastructure-lab
-Hands-on IT infrastructure lab: Windows Server 2022, Active Directory, Group Policy, PowerShell automation, Microsoft 365 and Azure. Documented step by step.
+Windows Server 2022 and Active Directory home lab built on VirtualBox, documented step by step.
 
 ## Goal
-Build a hands-on IT infrastructure lab to develop practical sysadmin skills.
+Build a hands-on IT infrastructure lab to develop practical systems administration skills.
 
-## Tools
+## Environment
 - VirtualBox
-- Windows Server 2022 (Evaluation)
-- Active Directory, Group Policy
-- PowerShell
+- Windows Server 2022 (Evaluation) - DC01
+- Windows 11 client - CLIENT01
 
-## Roadmap
-- [x] Lab environment setup
-- [ ] Active Directory domain setup
-- [ ] Group Policy, DNS, DHCP
-- [ ] PowerShell automation
+## Completed
+- Lab environment setup (VM, Guest Additions, NAT and internal network adapters)
+- Active Directory domain `lab.local` with integrated DNS
+- Organizational unit, user and security group structure
+- Windows 11 client joined to the domain
+
+## Roadmap (planned)
+- [ ] File server with group-based permissions
+- [ ] Group Policy
+- [ ] DHCP server role
+- [ ] PowerShell administration basics
 - [ ] Microsoft 365 / Entra ID / Intune
 - [ ] Networking basics
 - [ ] Azure basics
-
-## Progress Log
-   - Created Windows Server 2022 Evaluation VM in VirtualBox (4 GB RAM, 2 CPU, 40 GB disk)
-   - Installed Guest Additions
 
 ## Documentation
 Start with the [lab overview](docs/00-lab-overview.md), which links to every setup step.
